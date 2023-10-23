@@ -31,7 +31,7 @@ const DisplayCountry = ({ Data }) => {
                 src={data.flags.png}
                 alt={data.flags.alt}
                 loading="lazy"
-                className="w-ful  h-40"
+                className="w-full  h-40"
               />
               <h1 className=" text-gray-300 font-bold">
                 <span className=" text-blue-500 font-extrabold"> Name : </span>
