@@ -20,8 +20,6 @@ const DisplayCountry = ({ Data }) => {
             langs=Object.values(data.languages)
             
           }
-       
-  console.log(langs)
           return (
             <div
               className=" border-[2px] border-[#30363D] p-4 "
