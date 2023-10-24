@@ -1,7 +1,7 @@
 import React from 'react'
 import {useForm} from 'react-hook-form'
 
-const RegionForm = ({HandleSelectChange}) => {
+const RegionForm = ({HandleSelectChange,toggle}) => {
     const form = useForm()
     const {register,handleSubmit,formState,watch} = form
     const {errors} = formState
@@ -10,7 +10,7 @@ const RegionForm = ({HandleSelectChange}) => {
     <main>
    <form onSubmit={(e) => e.preventDefault()} noValidate>
 
-     <select  onChange={HandleSelectChange} className=' hidden md:block outline-none bg-transparent border-[1px] border-[#30363D] rounded-lg p-2 text-gray-100'>
+     <select  onChange={HandleSelectChange} className={' hidden md:block outline-none bg-transparent border-[1px] border-[#30363D] rounded-lg p-2 text-gray-100'}>
                         <option value="">Region</option>
                         <option value="All">all</option>
                         <option value="Asia">Asia</option>

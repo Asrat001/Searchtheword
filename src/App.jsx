@@ -1,17 +1,28 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import Index from './Componet/Index'
 import {QueryClientProvider,QueryClient} from 'react-query'
+import { Route  ,createRoutesFromElements ,RouterProvider ,createBrowserRouter } from 'react-router-dom'
+import DisplayDetail from './Componet/DisplayDetail'
 
 const queryClient= new QueryClient()
 
 function App() {
-  const [count, setCount] = useState(0)
+  const router = createBrowserRouter(
+    createRoutesFromElements(
+     <Route path='/Searchtheword'>
+      
+      <Route index  element={<Index/>}/>
+      <Route path='/Searchtheword/:name' element={<DisplayDetail/>}/>
+      </Route>
+  
+     
+        )
+      );
+    
 
   return (
     <QueryClientProvider client={queryClient}>
-    <Index/>
+    <RouterProvider router={router}/>
     </QueryClientProvider>
 
     

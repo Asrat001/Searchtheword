@@ -1,13 +1,14 @@
-import React, { useState } from 'react'
+import React, { useMemo} from 'react'
 import {BiSearch} from 'react-icons/bi'
-import {useForm} from 'react-hook-form'
+import {useForm ,useWatch} from 'react-hook-form'
 
 const SearchForm = ({HandelSearch,fechSerach}) => {
   const form = useForm()
-  const {register,handleSubmit,formState,watch} = form
+  const {register,handleSubmit,formState,control} = form
   const {errors} = formState
- const name = watch("country")
- sessionStorage.setItem("name", name)
+ const name = useWatch({control,name:'country'})
+ console.log(name)
+ sessionStorage.setItem("name", name )
   return (
     <main>
  <form className=' flex  items-center gap-2 sm:gap-4'onSubmit={handleSubmit(HandelSearch)} noValidate>
