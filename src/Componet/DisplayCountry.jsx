@@ -5,12 +5,7 @@ import { Link } from "react-router-dom";
 const DisplayCountry = ({ Data }) => {
   return (
     <section className="  min-h-screen   relative mt-[100px] p-10">
-      <div className=" mb-[50px] flex items-center gap-2  shadow-md p-1 shadow-gray-300  w-fit">
-        <a href="#" className=" text-blue-600   font-bold">
-          checek out similare project done by me using D3.js
-        </a>
-        <AiOutlineArrowRight size={20} className=" text-gray-300" />
-      </div>
+     
       <div className=" grid grid-cols-1 sm:grid-cols-4 gap-4">
         {Data?.map((data) => {
           let langs = [];
