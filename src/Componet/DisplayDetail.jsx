@@ -27,7 +27,7 @@ const DisplayDetail = () => {
         <Link to='/Searchtheword/' className=' p-2 bg-slate-200 text-gray-700  rounded-lg '>
         Go Back
         </Link>
-        <div className=' flex flex-col md:flex-row  justify-between'> 
+        <div className=' flex flex-col md:flex-row  justify-around'> 
         <div className='mt-4'>
             <img src={data.data[0].flags.png} alt={data.data[0].flags.alt}/>
 
