@@ -34,8 +34,9 @@ When you search for a country or apply filters, the website will display a list 
     $-> Language: The official language(s) spoken in the country.
     $-> Capital City: The capital city of the country.
 ```
-
-
+Tech used 
+-----------
+Vite React , Tailwindcss , React Query , React Router dom
 
 Credits
 -----------
