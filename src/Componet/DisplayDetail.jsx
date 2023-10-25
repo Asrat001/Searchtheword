@@ -72,7 +72,7 @@ const DisplayDetail = () => {
               <p className="text-gray-300 font-bold">
                 <span className=" text-blue-500 font-extrabold">
                   {" "}
-                  Population :{" "}
+                  Subregion :{" "}
                 </span>
                 {data.data[0].subregion
                 
